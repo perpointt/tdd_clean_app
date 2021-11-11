@@ -21,11 +21,11 @@ void main() {
   const tNumberTrivia = NumberTrivia(number: tNumber, text: 'test ');
 
   test('should get trivia from repository', () async {
-    // // arange
+    // arange
     when(mockNumberTriviaRepository.getRandomNumberTrivia())
         .thenAnswer((_) async => const Right(tNumberTrivia));
 
-    // // act
+    // act
     final result = await usecase(NoParams());
 
     // assert
