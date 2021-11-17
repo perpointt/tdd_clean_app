@@ -11,6 +11,7 @@ analyzer:
 
   exclude:
     - test/.test_coverage.dart
+    - test/**/*.mocks.dart
     - lib/generated_plugin_registrant.dart
     - lib/**.g.dart
     - lib/**.freezed.dart
