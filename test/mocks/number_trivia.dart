@@ -5,6 +5,7 @@ import 'package:tdd_clean_app/core/network/network_info.dart';
 import 'package:tdd_clean_app/features/number_trivia/data/datasourses/number_trivia_local_data_source.dart';
 import 'package:tdd_clean_app/features/number_trivia/data/datasourses/number_trivia_remote_data_source.dart';
 import 'package:tdd_clean_app/features/number_trivia/domain/repositories/number_trivia_repository.dart';
+import 'package:http/http.dart' as http;
 
 @GenerateMocks([
   NumberTriviaRepository,
@@ -12,6 +13,7 @@ import 'package:tdd_clean_app/features/number_trivia/domain/repositories/number_
   NumberTriviaLocalDataSource,
   NetworkInfo,
   DataConnectionChecker,
-  SharedPreferences
+  SharedPreferences,
+  http.Client,
 ])
 void main() {}
